@@ -1,3 +1,32 @@
+@import "../../global.scss";
 .about{
-    background-color: lightgreen;
+    background-color: $secondaryColor;
+    display: flex;
+
+    .left{
+        flex: 0.50;
+        overflow: hidden;
+        background-color: $secondaryColor;
+
+        .imgContainer{
+            width: 1200px;
+            height: 1200px; 
+            //background-color: crimson; 
+            //border-radius: 50%; 
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right; 
+
+            img{
+                height: 90%;
+            }
+        }
+    }
+    
+    .right{
+        flex: 0.5;
+        background-color: $secondaryColor;
+        align-items: center;
+    }
 }

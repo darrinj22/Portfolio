@@ -5,7 +5,8 @@ import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume'; 
 import { useState } from 'react'; 
-import Menu from './components/menu/Menu'
+import Menu from './components/menu/Menu';
+import Intro from './components/Intro/Intro';
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -15,10 +16,11 @@ function App() {
       <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
-        <Contact />
+        <Intro />
         <About />
-        <Projects />
         <Resume />
+        <Projects />
+        <Contact />
       </div> 
     </div>
   );
