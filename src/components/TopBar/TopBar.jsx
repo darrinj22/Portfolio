@@ -9,12 +9,24 @@ export default function TopBar({menuOpen, setMenuOpen}) {
         <div className="left">
           <a href="#resume" className="logo">DJ Hansen</a>
           <div className="itemContainer">
-            <Person className="icon"/>
-            <span>+1 (919) 508 - 7330 </span>
+            {/* <person classname="icon"/> */}
+            <span>HOME</span>
           </div>
           <div className="itemContainer">
-            <Mail className="icon"/>
-            <span>darrinjhansen@gmail.com </span>
+            {/* <person classname="icon"/> */}
+            <span>ABOUT </span>
+          </div>
+          <div className="itemContainer">
+            {/* <mail classname="icon"/> */}
+            <span>RESUME</span>
+          </div>
+          <div className="itemContainer">
+            {/* <mail classname="icon"/> */}
+            <span>PROJECTS</span>
+          </div>
+          <div className="itemContainer">
+            {/* <mail classname="icon"/> */}
+            <span>CONTACT</span>
           </div>
         </div>
         <div className="right">
