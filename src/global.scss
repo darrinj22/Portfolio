@@ -6,7 +6,8 @@ $widthMobile: 450px;
 
 $breakpoints: (
     halfScreen : 1400px,
-    mobile : 450px
+    mobile : 450px,
+    navFirst : 1000px
 );
 
 @mixin media($keys...){

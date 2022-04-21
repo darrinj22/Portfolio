@@ -14,10 +14,13 @@
         display: flex; 
         align-items: center;
         justify-content: space-between;
+        
 
         .left{
             display: flex;
             align-items: center;
+
+
             
             .logo{
                 font-size: 35px; 
@@ -26,10 +29,17 @@
                 color: inherit;
                 margin-right: 40px;
                 transition: all 0s ease;
+                @include media(mobile){
+                    display: none;
+                }
             }
 
             .itemContainer{
                 margin-left: 30px;
+
+                @include media(navFirst){
+                    display: none;
+                }
 
                 .icon{
                     font-size: 20px;
