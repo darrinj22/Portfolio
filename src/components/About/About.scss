@@ -3,10 +3,19 @@
     background-color: $secondaryColor;
     display: flex;
 
+    @include media(halfScreen){
+        flex-direction: column;
+        align-items: center;
+    }
+
     .left{
         flex: 0.5;
         overflow: hidden;
         background-color: $secondaryColor;
+
+        @include media(halfScreen) {
+            flex: 0.7;
+        }
 
         .imgContainer{
             width: 1200px;
@@ -18,8 +27,21 @@
             justify-content: center;
             float: center; 
 
+            @include media(halfScreen){
+                align-items: flex-start;
+                padding-top: 10px;
+            }
+
             img{
                 height: 100%;
+
+                @include media(halfScreen){
+                    height: 50%;
+                    width: 600px;
+                    height: 800px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
             }
         }
     }
@@ -27,6 +49,10 @@
     .right{
         flex: 0.5;
         position: relative;
+
+        @include media(halfScreen) {
+            flex: 0.3;
+        }
 
         .wrapper{
             width: 100%;
@@ -36,15 +62,28 @@
             flex-direction: column;
             justify-content: center;
 
+            @include media(halfScreen) {
+                padding-left: 0;
+                align-items: center;
+            }
+
             h1{
                 font-size: 80px;
                 margin: 10px 0;
+
+                @include media(halfScreen){
+                    font-size: 65px; 
+                }
             }
             h2{
                 font-size: 50px;
             }
             h3{
                 font-size: 45px;
+                
+                @include media(halfScreen){
+                    font-size: 35px; 
+                }
 
                 span{
                     font-size: inherit;

@@ -1,2 +1,30 @@
 $mainColor: #15023a;
 $secondaryColor: white; 
+
+$widthHalfScreen: 1400px;
+$widthMobile: 450px;
+
+$breakpoints: (
+    halfScreen : 1400px,
+    mobile : 450px
+);
+
+@mixin media($keys...){
+    @each $key in $keys {
+        @media (max-width: map-get($breakpoints, $key)){
+            @content
+        }
+    }
+}
+
+// @mixin halfscreen {
+//     @media (max-width: #{$widthhalfscreen}){
+//         @content
+//     }
+// }
+
+// @mixin mobile {
+//     @media (max-width: #{$widthmobile}){
+//         @content
+//     }
+// }
