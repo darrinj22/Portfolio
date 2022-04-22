@@ -8,6 +8,10 @@ export default function TopBar({menuOpen, setMenuOpen}) {
       <div className="wrapper">
         <div className="left">
           <a href="#resume" className="logo">DJ Hansen</a>
+          
+          
+        </div>
+      <div className="center">
           <div className="itemContainer">
             {/* <person classname="icon"/> */}
             <span>HOME</span>

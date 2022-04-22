@@ -10,9 +10,9 @@
         scroll-behavior: smooth;
         scroll-snap-type: y proximity;
         scrollbar-width: none; // for firefox 
-        &::-webkit-scrollbar{
-            display: none;  // chrome
-        }
+        // &::-webkit-scrollbar{
+        //     display: none;  // chrome
+        // }
 
         > *{
             width: 100vw;
