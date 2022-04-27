@@ -1,6 +1,7 @@
 @import "../../global.scss";
-.about{
-    background: linear-gradient(180deg,$mainColor 25%, $accent1 75%);
+
+.skills{
+    background: $mainColor;
     display: flex;
 
     @include media(halfScreen){
@@ -12,7 +13,7 @@
         flex-direction: column;
         align-items: center;
     }
-
+    
     .left{
         flex: 0.5;
         overflow: hidden;
@@ -49,8 +50,8 @@
                 height: 80%;
                 margin-top: 100px;
                 box-shadow: 0 5px 14px 0 rgba(0,0,0,0.1);
-                padding: 10px; 
-                background: linear-gradient(0deg,$mainColor 25%, $accent1 75%);
+                padding: 5px; 
+                background: $accent1;
 
                 @include media(halfScreen){
                     height: 50%;
@@ -75,9 +76,12 @@
     .right{
         flex: 0.5;
         position: relative;
+        display: flex;
         margin-top: 100px;
         margin-right: 150px;
         background-color: transparent;
+        justify-content: center;
+        align-items: center;
 
         @include media(halfScreen) {
             flex: 0.3;
@@ -88,6 +92,8 @@
         @include media(mobile) {
             flex: 0.4;
         }
+
+
 
         .wrapper{
             width: 100%;
@@ -113,6 +119,41 @@
                 align-items: center;
             }
 
+            .progress {
+                height: 20px;
+                border-radius:20px;
+                margin-bottom: 30px;
+                max-height: 100%;
+                overflow: hidden;
+                transition: 3s ease; 
+                transition-delay: 0.5s; 
+            
+            }
+            
+            .progress .skill .val {
+                float: right;
+                //font-style: normal;
+                margin: 0px 50px 0 0;
+            }
+            span {
+                
+                display:block;
+                position: relative;
+                font-size: 22px;
+                font-weight: 600;
+                text-transform:uppercase;
+                color: white;
+                line-height: 30px;
+                margin-bottom:5px;
+                overflow: hidden;
+                max-height: 100%;
+            }
+            .progress-bar {
+                text-align: left;
+            
+                border-radius:20px;
+                transition-duration: 3s;
+            }
             h1{
                 font-size: 80px;
                 margin: 20px 0px 50px;
@@ -136,6 +177,8 @@
             }
             h3{
                 font-size: 45px;
+                color: white;
+                overflow: hidden;
                 
                 @include media(halfScreen){
                     font-size: 35px; 
