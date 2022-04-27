@@ -5,17 +5,17 @@ import { useEffect, useRef } from 'react';
 
 export default function About() {
 
-  const textRef = useRef();
+  // const textRef = useRef();
 
-  useEffect(()=>{
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1000,
-      backSpeed: 60,
-      typeSpeed: 75,
-      strings: ["Computer","Systems","Software"]
-    });
-  }, []);
+  // useEffect(()=>{
+  //   init(textRef.current, {
+  //     showCursor: true,
+  //     backDelay: 1000,
+  //     backSpeed: 60,
+  //     typeSpeed: 75,
+  //     strings: ["Computer","Systems","Software"]
+  //   });
+  // }, []);
 
   return (
     <div className="about" id="about">
@@ -26,8 +26,10 @@ export default function About() {
       </div>
       <div className='right'>
         <div className="wrapper">
-          <h1>Darrin Hansen</h1>
-          <h3><span ref={textRef}></span> Engineer</h3>
+          <h1>About Me.</h1>
+          <p>data to be displayed to the screen. I'm not really sure why I can't seem to figure out why these 
+            test cases look so wierd to me.
+          </p>
         </div>
         <a href="#resume">
           <img src="assets/down.png" alt=""></img>

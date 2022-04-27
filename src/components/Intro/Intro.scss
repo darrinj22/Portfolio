@@ -5,8 +5,11 @@
     
 
     @include media(halfScreen){
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        //align-items: center;
+        align-items: middle;
+        justify-content: center;
     }
 
     @include media(mobile){
@@ -38,6 +41,7 @@
             align-items: center;
             justify-content: center;
             transition: all 1s ease;
+            overflow: hidden;
 
 
             @include media(halfScreen) {
@@ -53,12 +57,13 @@
             h1{
                 font-size: 150px;
                 margin: 10px 0;
+                overflow: hidden;
 
                 @include media(halfScreen){
-                    font-size: 65px; 
+                    font-size: 100px; 
                 }
                 @include media(mobile){
-                    font-size: 45px; 
+                    font-size: 50px; 
                 }
             }
             h2{
@@ -66,7 +71,7 @@
             }
             h3{
                 font-size: 65px;
-                
+                overflow: hidden;
                 @include media(halfScreen){
                     font-size: 35px; 
                 }
@@ -102,6 +107,9 @@
             width: 50px;
             //background-color: $secondaryColor;
             animation: arrowBlink 2s infinite;
+            @include media(halfScreen){
+                display: none;
+            }
         }
 
         @keyframes arrowBlink {

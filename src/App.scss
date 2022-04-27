@@ -3,12 +3,13 @@
     
     .sections{
         width: 100%;
+        max-width: 100%;
         height: calc(100vh);
         background-color: red;
         position: relative; 
         top: 0px;
         scroll-behavior: smooth;
-        scroll-snap-type: y proximity;
+        //scroll-snap-type: y proximity;
         scrollbar-width: none; // for firefox 
         // &::-webkit-scrollbar{
         //     display: none;  // chrome
@@ -16,6 +17,7 @@
 
         > *{
             width: 100vw;
+            max-width: 100%;
             height: calc(100vh);
             scroll-snap-align: start;
         }
