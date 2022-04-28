@@ -2,6 +2,7 @@
 .intro{
     background-color: $mainColor;
     display: flex;
+    //overflow: hidden;
     
 
     @include media(halfScreen){
@@ -72,6 +73,7 @@
             h3{
                 font-size: 65px;
                 overflow: hidden;
+                color: white;
                 @include media(halfScreen){
                     font-size: 35px; 
                 }

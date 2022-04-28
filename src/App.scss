@@ -1,25 +1,27 @@
+@import "./global.scss";
 .app{
     height: 100vh; 
     
     .sections{
         width: 100%;
         max-width: 100%;
-        height: calc(100vh);
+        height: calc(100vh + 150px);
         background-color: transparent;
         position: relative; 
         top: 0px;
         scroll-behavior: smooth;
+        //overflow: hidden;
         //scroll-snap-type: y proximity;
         scrollbar-width: none; // for firefox 
-        // &::-webkit-scrollbar{
-        //     display: none;  // chrome
-        // }
-
+         &::-webkit-scrollbar{
+             display: none;  // chrome
+         }
         > *{
             width: 100vw;
             max-width: 100%;
             height: calc(100vh);
             scroll-snap-align: start;
+            overflow: hidden;
         }
     }
 }

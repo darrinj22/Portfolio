@@ -1,15 +1,18 @@
 import React from 'react';
 import './Skills.scss';
 import Progress from './Progress';
+import ExperienceData from './ExperienceData';
 import { useState, useEffect } from 'react'; 
+import { VerticalTimeline } from 'react-vertical-timeline-component/dist-modules';
+import VerticalTimelineTest from './verticalTimeline';
 
 export default function Skills() {
 
   return (
     <div className="skills" id="skills">
         <div className='left'>
-        <div className="imgContainer">
-          <img src="assets/profile_pic.jpg" alt="profile pic" />
+        <div className="wrapper">
+            <VerticalTimelineTest />
         </div>
       </div>
       <div className='right'>
@@ -19,7 +22,7 @@ export default function Skills() {
                     <div class="col-md-8">
                         <h3 class="text-center">My Skills</h3>
                         <br />
-
+                        
                         <span>Caustic</span>
                         <div class="progress skill-bar">
                         <Progress width="800" percent=".9"/>
@@ -58,9 +61,6 @@ export default function Skills() {
                 </div>  
             </div>    
         </div>
-        <a href="#resume">
-          <img src="assets/down.png" alt=""></img>
-        </a>
       </div>
     </div>
   )
