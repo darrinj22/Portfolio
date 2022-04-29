@@ -12,10 +12,10 @@
         scroll-behavior: smooth;
         //overflow: hidden;
         //scroll-snap-type: y proximity;
-        scrollbar-width: none; // for firefox 
-         &::-webkit-scrollbar{
-             display: none;  // chrome
-         }
+        // scrollbar-width: none; // for firefox 
+        //  &::-webkit-scrollbar{
+        //      display: none;  // chrome
+        //  }
         > *{
             width: 100vw;
             max-width: 100%;

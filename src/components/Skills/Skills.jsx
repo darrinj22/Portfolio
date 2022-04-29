@@ -7,7 +7,11 @@ import { VerticalTimeline } from 'react-vertical-timeline-component/dist-modules
 import VerticalTimelineTest from './verticalTimeline';
 
 export default function Skills() {
-
+    const testData = [
+        { bgcolor: "#6a1b9a", completed: 60 },
+        { bgcolor: "#00695c", completed: 30 },
+        { bgcolor: "#ef6c00", completed: 53 },
+    ];
   return (
     <div className="skills" id="skills">
         <div className='left'>
@@ -25,37 +29,37 @@ export default function Skills() {
                         
                         <span>Caustic</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".9"/>
+                        <Progress width="800" percent="90"/>
                         </div>
                 
                         <span>Lifeline</span>     
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".8"/>
+                        <Progress width="800" percent="80"/>
                         </div>
 
                         <span>Wraith</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".7"/>
+                        <Progress width="800" percent="70"/>
                         </div>    
             
                         <span>Gibraltar</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".6"/>
+                        <Progress width="800" percent="60"/>
                         </div>              
             
                         <span>Bloodhound</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".5"/>
+                        <Progress width="800" percent="50"/>
                         </div>  
                
                         <span>Seer</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".4"/>
+                        <Progress width="800" percent="40"/>
                         </div>                
                      
                         <span>Rampart</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent=".3"/>
+                        <Progress width="800" percent="30"/>
                         </div>                  
                     </div>
                 </div>  
