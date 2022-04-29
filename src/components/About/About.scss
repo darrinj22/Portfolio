@@ -1,6 +1,11 @@
 @import "../../global.scss";
 .about{
-    background: linear-gradient(180deg,$mainColor 25%, $accent1 75%);
+    //background: linear-gradient(180deg,$mainColor 25%, $accent1 75%);
+    //background-color: #F5F5F5;
+    background-image: url("../../../public/assets/blckbgr180.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
 
     @include media(halfScreen){
@@ -133,6 +138,7 @@
             p{
                 font-size: 30px;
                 color: white;
+                //color: $mainColor;
             }
             h3{
                 font-size: 45px;

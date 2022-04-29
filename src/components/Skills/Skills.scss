@@ -1,8 +1,12 @@
 @import "../../global.scss";
 
 .skills{
-   background: $mainColor;
+   //background: $mainColor;
    //background: linear-gradient(-180deg,$accent1 5%, $mainColor 95%);
+   background-image: url("../../../public/assets/blckbg.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
     display: flex;
 
     @include media(halfScreen){
@@ -14,6 +18,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     
     .left{
         flex: 0.6;
@@ -23,7 +28,8 @@
         padding: 0;
 
         @include media(halfScreen) {
-            flex: 0.7;
+            flex: 0.9;
+            overflow: hidden;
         }
         @include media(mobile) {
             flex: 0.6;
@@ -42,6 +48,9 @@
             //align-items: middle;
             overflow: hidden;
             justify-content: center;
+            @include media(halfScreen){
+                overflow: hidden;
+            }
 
             h3{
                 font-size: 45px;
@@ -65,14 +74,14 @@
         flex: 0.4;
         position: relative;
         display: flex;
-        margin-top: 100px;
+        margin-top: 40px;
         margin-right: 150px;
         background-color: transparent;
         justify-content: center;
         align-items: center;
 
         @include media(halfScreen) {
-            flex: 0.3;
+            flex: 0.1;
             margin-top: 0;
             margin-right: 75px;
             margin-left: 75px;
@@ -95,18 +104,23 @@
             align-items: middle;
             overflow: hidden;
             //justify-content: center;
-
+            //background-color: red;
 
             @include media(halfScreen) {
+                display: none;
                 padding-left: 0;
                 align-items: center;
             }
             
             @include media(mobile) {
+                display: none;
                 padding-left: 0;
                 align-items: center;
             }
 
+            .icon-bar{
+                background-color: red;
+            }
             .progress {
                 height: 20px;
                 border-radius:20px;
@@ -174,6 +188,95 @@
                 @include media(mobile){
                     font-size: 25px; 
                 }
+            }
+            h4{
+                font-size: 35px;
+                color: $accent1;
+                overflow: hidden;
+                
+                @include media(halfScreen){
+                    font-size: 35px; 
+                }
+                @include media(mobile){
+                    font-size: 25px; 
+                }
+            }
+            .skills-icons{
+                display: flex;
+                background-color: transparent;
+                justify-content: center;
+                
+
+                ul{
+                    display:flex;
+                   // height: 100px;
+                    //flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+                    font-size: 22px;
+                    font-weight: 600;
+                    //text-transform:uppercase;
+                    color: white;
+                    //line-height: 30px;
+                    margin-top: 55px;
+                    margin-bottom:5px;
+                    overflow: hidden;
+                    max-height: 100%;
+                    
+
+                    li{
+                        overflow: hidden;
+                        margin-top: 30px;
+                        margin-right: 25px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            //height: 300px;
+                            //margin-top: 30px;
+                            height: 50%;
+                            width: 100%;
+                            object-fit: contain;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+            .coursework{
+                display: flex;
+                background-color: transparent;
+
+                //height: 300px;
+                justify-content: center;
+                //flex-direction: column;
+
+                ul{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+                    font-size: 22px;
+                    font-weight: 600;
+                    //text-transform:uppercase;
+                    color: white;
+                    line-height: 30px;
+                    margin-bottom:5px;
+                    overflow: hidden;
+                    max-height: 100%;
+                    margin-left: -150px;
+
+                    li{
+                        overflow: hidden;
+                        margin-top: 30px;
+
+                        img {
+                            max-width: 100%;
+                            //object-fit: contain;
+                        }
+                    }
+                }
+                
             }
         }
     

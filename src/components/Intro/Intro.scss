@@ -1,6 +1,10 @@
 @import "../../global.scss";
 .intro{
-    background-color: $mainColor;
+    //background-color: $mainColor;
+    background-image: url("../../../public/assets/blckbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     //overflow: hidden;
     
@@ -21,7 +25,7 @@
     .titleContainer{
         flex: 1;
         position: relative;
-        background-color: $mainColor;
+        //background-color: $mainColor;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -83,7 +87,7 @@
 
                 span{
                     font-size: inherit;
-                    color: $accent3;
+                    color: $accent2;
                 }
 
                 .ityped-cursor{

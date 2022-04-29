@@ -5,6 +5,12 @@ import ExperienceData from './ExperienceData';
 import { useState, useEffect } from 'react'; 
 import { VerticalTimeline } from 'react-vertical-timeline-component/dist-modules';
 import VerticalTimelineTest from './verticalTimeline';
+import arrow from '../../assets/arrow.png';
+import c from "../../assets/c.png";
+import cplusplus from "../../assets/c++.png";
+import py from "../../assets/python.png";
+import reactimg from "../../assets/react.png";
+import sql from "../../assets/sql.png";
 
 export default function Skills() {
     const testData = [
@@ -14,6 +20,8 @@ export default function Skills() {
     ];
   return (
     <div className="skills" id="skills">
+        
+            <h1>Resume</h1> 
         <div className='left'>
         <div className="wrapper">
             <VerticalTimelineTest />
@@ -21,35 +29,35 @@ export default function Skills() {
       </div>
       <div className='right'>
         <div className="wrapper">
-            <div class="container">
+            <div class="container mb-5 dissapear">
                 <div class="row d-flex justify-content-center align-middle">
                     <div class="col-md-8">
-                        <h3 class="text-center">My Skills</h3>
+                        {/* <h4 class="text-center">My Skills</h4> */}
                         <br />
                         
-                        <span>Caustic</span>
+                        <span>C</span>
                         <div class="progress skill-bar">
                         <Progress width="800" percent="90"/>
                         </div>
                 
-                        <span>Lifeline</span>     
+                        <span>C++</span>     
                         <div class="progress skill-bar">
                         <Progress width="800" percent="80"/>
                         </div>
 
-                        <span>Wraith</span>
+                        <span>Python</span>
                         <div class="progress skill-bar">
                         <Progress width="800" percent="70"/>
                         </div>    
             
-                        <span>Gibraltar</span>
+                        <span>React</span>
                         <div class="progress skill-bar">
                         <Progress width="800" percent="60"/>
                         </div>              
             
-                        <span>Bloodhound</span>
+                        <span>SQL</span>
                         <div class="progress skill-bar">
-                        <Progress width="800" percent="50"/>
+                        <Progress width="800" percent="80"/>
                         </div>  
                
                         <span>Seer</span>
@@ -63,7 +71,16 @@ export default function Skills() {
                         </div>                  
                     </div>
                 </div>  
-            </div>    
+            </div>
+                <div class="skills-icons">
+                    <ul>
+                        <li><img src={c} alt="" /></li>
+                        <li><img src={cplusplus} alt="" /></li>
+                        <li><img src={py} alt="" /></li>
+                        <li><img src={reactimg} alt="" /></li>
+                        <li><img src={sql} alt="" /></li>
+                    </ul>
+                </div>
         </div>
       </div>
     </div>

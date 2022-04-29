@@ -7,8 +7,8 @@ import './verticalTimeline.scss';
 import timelineElements from './ExperienceData';
 
 export default function VerticalTimelineTest() {
-    let workIconStyles = { background: "#06D6A0", margin: "15px 0px 0px -30px"};
-    let schoolIconStyles = { background: "#f9c74f", margin: "15px 0px 0px -30px"};
+    let workIconStyles = { background: "#2a9d8f", margin: "15px 0px 0px -30px"};
+    let schoolIconStyles = { background: "#e9c46a", margin: "15px 0px 0px -30px"};
   return (
     <div className="vte">
     <VerticalTimeline
