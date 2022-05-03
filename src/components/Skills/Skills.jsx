@@ -20,8 +20,6 @@ export default function Skills() {
     ];
   return (
     <div className="skills" id="skills">
-        
-            <h1>Resume</h1> 
         <div className='left'>
         <div className="wrapper">
             <VerticalTimelineTest />

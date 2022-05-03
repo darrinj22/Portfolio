@@ -1,6 +1,10 @@
 @import "../../global.scss";
 .projects{
-    background-color: $secondaryColor;
+    background-image: url("../../../public/assets/blckbgr180.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +12,8 @@
     h1{
         font-size: 50px;
         padding-bottom: 50px;
+        color: white;
+        padding-top: 50px;
 
     }
 
@@ -18,45 +24,148 @@
         display: flex;
     }
 
-    .container{
-        width: 70%;
+    .description-container{
+        //width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap; 
-        padding-top: 70px;
+        flex-direction: row;
+        //flex-wrap: wrap; 
+        //padding-top: 60px;
 
         .item{
-            width: 250px;
-            height: 250px;
+            //background-image: url('../../assets/redsox.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            width: 350px;
+            height: 150px;
             border-radius: 20px;
-            border: 1px solid rgb(240, 239, 239); 
-            margin: 10px 20px; 
+            //border: 1px solid rgb(240, 239, 239); 
+            margin: 0px 2px; 
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             color: white;
             position: relative;
             transition: all .5s ease;
-            cursor: pointer;  
+            overflow: hidden;
+            //cursor: pointer;  
 
             h3{
                 position: absolute;
-                font-size: 20px;
+                top: 0px;
+                overflow: hidden;
+                display: flex;
+               text-align: center;
+                font-size: 25px;
+                color: white;
             }
 
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                overflow: hidden;
                 z-index: 1;
+
             }
 
+            p{  
+                font-size: 20px;
+                position: absolute;
+                top: 0px;
+            }
+
+
+
             &:hover{
-                background-color: $mainColor;
+                background-image: none;
+                // background-color: $secondaryColor !important;
+                // transition: all .5s ease-in-out; 
+                // mask-image: linear-gradient(rgba(255,255,255,1),transparent);
+                
                 img{
                     opacity: 0.2;
                     z-index: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .projectslistcontainer{
+        //width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        //flex-wrap: wrap; 
+        padding-top: 60px;
+
+        .item{
+            //background-image: url('../../assets/redsox.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            width: 350px;
+            height: 750px;
+            border-radius: 20px;
+            border: 1px solid rgb(240, 239, 239); 
+            margin: 0px 2px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            transition: all .5s ease;
+            overflow: hidden;
+            cursor: pointer;  
+
+            h3{
+                position: absolute;
+                top: 0px;
+                overflow: hidden;
+                display: flex;
+               text-align: center;
+                font-size: 25px;
+                color: white;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+                z-index: 1;
+
+            }
+
+            p{  
+                font-size: 20px;
+                position: absolute;
+                bottom: 0px;
+            }
+
+
+
+            &:hover{
+                background-image: none;
+                background-color: $secondaryColor !important;
+                transition: all .5s ease-in-out; 
+                mask-image: linear-gradient(rgba(255,255,255,1),transparent);
+
+                .overlay{
+                    background-color: white;
+                }
+                
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                    width: 100%;
                 }
             }
         }
