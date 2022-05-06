@@ -19,6 +19,7 @@ import hurricanes from '../../assets/hurricanes.jpg';
 import ncsu from '../../assets/ncsu.jpg';
 import orioles from '../../assets/orioles.png';
 
+
 export default function Projects() {
   const [selected,setSelected] = useState("ftr"); 
   const [data, setData] = useState([]);
@@ -150,7 +151,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      
+
     </div>
   )
 }

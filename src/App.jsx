@@ -10,7 +10,7 @@ import Intro from './components/Intro/Intro';
 import Skills from './components/Skills/Skills';
 
 function App() {
-  const [menuOpen,setMenuOpen] = useState(false)
+  const [menuOpen,setMenuOpen] = useState(false);
 
   return (
     <div className="app">

@@ -18,8 +18,10 @@ export default function Skills() {
         { bgcolor: "#00695c", completed: 30 },
         { bgcolor: "#ef6c00", completed: 53 },
     ];
+
+  
   return (
-    <div className="skills" id="skills">
+    <div className="skills" id="skills" >
         <div className='left'>
         <div className="wrapper">
             <VerticalTimelineTest />
