@@ -42,7 +42,7 @@ export default function Contact() {
           </button>
           {/* {message && <span>Thanks, I will reply ASAP</span>} */}
         </form>
-        <div class="skills-icons">
+        <div className="skills-icons">
         <ul>
             <li><img src={github} alt="" /></li>
             <li><img src={linkedin} alt="" /></li>

@@ -2,8 +2,15 @@ import React from 'react'
 import './About.scss'
 import { init } from 'ityped'; 
 import { useEffect, useRef } from 'react';
+import useOnScreen from '../../hooks/useOnScreen';
 
 export default function About() {
+  const targetRef = useRef(null);
+  const isVisible = useOnScreen({
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.4
+  }, targetRef)
   return (
     <div className="about" id="about">
       <div className='left'>

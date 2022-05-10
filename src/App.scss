@@ -24,4 +24,17 @@
             overflow: hidden;
         }
     }
+    .tempfooter{
+        text-transform: uppercase;
+        top: 0;
+        left: 0;
+        position: fixed; 
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        height: 100px; 
+        background-color: #6495EF;
+        font-size: 50px;
+    }
 }

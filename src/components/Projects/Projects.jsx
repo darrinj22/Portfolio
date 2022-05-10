@@ -138,7 +138,7 @@ export default function Projects() {
       </ul> */}
       <div className="projectslistcontainer">
         {projectsList.map( (d) => (
-          <div className="item" style={{backgroundImage: `url(${d.img})`}} >
+          <div className="item" style={{backgroundImage: `url(${d.img})`}} key={d.id}>
             {/* <img src={d.img} alt="" /> */}
             <h3>{d.title}</h3>
           </div> 
@@ -146,7 +146,7 @@ export default function Projects() {
       </div>
       <div className="description-container">
         {projectsList.map( (t) => (
-          <div className="item">
+          <div className="item" key={t.id}>
             <p>{t.description}</p>
           </div>
         ))}

@@ -1,15 +1,23 @@
 import React from 'react'
 import './TopBar.scss'
-import { Person, Mail } from "@material-ui/icons"
+import { Person, Mail } from "@material-ui/icons";
+import { useRef, useState, useEffect} from 'react';
+import useOnScreen from '../../hooks/useOnScreen';
 
-export default function TopBar({menuOpen, setMenuOpen}) {
+export default function TopBar({menuOpen, setMenuOpen,changingbg}) {
+  //console.log(changingbg);
+  const targetRef = useRef(null);
+  const isVisible = useOnScreen({
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.4
+  }, targetRef)
+
   return (
-    <div className={'topbar ' + (menuOpen && "active")}>
+    <div className={'topbar ' + (menuOpen && "active")} style={{backgroundColor: `${changingbg}`}}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">DJ Hansen</a>
-          
-          
         </div>
       <div className="center">
           <div className="itemContainer">
