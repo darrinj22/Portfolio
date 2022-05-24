@@ -3,6 +3,7 @@ import './Contact.scss';
 import { useState, useEffect } from 'react';
 import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
+import { SocialIcon } from 'react-social-icons';
 
 export default function Contact() {
   const [message, setMessage] = useState(false); 
@@ -29,7 +30,8 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="title">
-      <h2>Contact.</h2>
+      <h1>Contact.</h1>
+      <p>Leave me a message below or feel free to email me at <span>darrinjhansen@gmail.com</span><br />Or find me on my LinkedIn and Github below!</p>
       </div>
 
       <div className="right">
@@ -40,15 +42,15 @@ export default function Contact() {
           <button type="submit" className={'send ' + (message && "active")}>
             {sentMessage}
           </button>
+          <div className="skills-icons">
+        <SocialIcon url="https://linkedin.com" className="icon" bgColor="#ffffffff" style={{ height: 75, width: 75 }}/>
+        <SocialIcon url="https://github.com" className="icon" bgColor="#ffffff" style={{ height: 75, width: 75 }}/>
+        </div>
           {/* {message && <span>Thanks, I will reply ASAP</span>} */}
         </form>
-        <div className="skills-icons">
-        <ul>
-            <li><img src={github} alt="" /></li>
-            <li><img src={linkedin} alt="" /></li>
 
-        </ul>
-        </div>
+        
+
       </div>
     </div>
   )

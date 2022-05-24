@@ -10,7 +10,10 @@ $widthHalfScreen: 1400px;
 $widthMobile: 450px;
 
 $breakpoints: (
-    halfScreen : 1400px,
+    halfScreen : 1600px,
+    inBetween: 2050px,
+    adjustWidth: 2300px,
+    quarterScreen : 900px,
     mobile : 450px,
     navFirst : 1000px
 );

@@ -125,7 +125,7 @@ export default function Projects() {
   ,[selected])
   return (
     <div className="projects" id="projects">
-      <h1>Projects</h1>
+      <h1>Projects.</h1>
       {/* <ul>
         {list.map((item) => (
           <PortfolioList 

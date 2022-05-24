@@ -24,10 +24,10 @@
         background-color: transparent;
 
         @include media(halfScreen) {
-            flex: 0.7;
+            flex: 0.4;
         }
-        @include media(mobile) {
-            flex: 0.6;
+        @include media(quarterScreen) {
+            flex: 0;
         }
 
         .imgContainer{
@@ -47,6 +47,7 @@
             }
             @include media(mobile){
                 align-items: flex-start;
+                display: none;
                 padding-top: 10px;
             }
 
@@ -58,19 +59,21 @@
                 background: linear-gradient(0deg,$mainColor 25%, $accent1 75%);
 
                 @include media(halfScreen){
-                    height: 50%;
-                    width: 600px;
+                    height: 30%;
+                    width: 400px;
                     max-width: 100%;
-                    height: 800px;
+                    height: 500px;
+                    margin-top: 75px;
                     object-fit: cover;
                     //border-radius: 50%;
                 }
-                @include media(mobile){
+                @include media(quarterScreen){
                     height: 100%;
                     width: 600px;
                     max-width: 100%;
                     height: 800px;
                     object-fit: cover;
+                    display: none;
                     //border-radius: 0;
                 }
             }
@@ -85,13 +88,16 @@
         background-color: transparent;
 
         @include media(halfScreen) {
-            flex: 0.3;
+            flex: 0.6;
             margin-top: 0;
             margin-right: 75px;
             margin-left: 75px;
         }
-        @include media(mobile) {
-            flex: 0.4;
+        @include media(quarterScreen) {
+            flex: 1;
+            margin-top: 0;            
+            margin-right: 35px;
+            margin-left: 35px;
         }
 
         .wrapper{
@@ -129,7 +135,7 @@
                     font-size: 65px; 
                 }
                 @include media(mobile){
-                    font-size: 45px; 
+                    font-size: 30px; 
                 }
             }
             h2{
@@ -139,6 +145,12 @@
                 font-size: 30px;
                 color: white;
                 //color: $mainColor;
+                @include media(halfScreen){
+                    font-size: 27px;
+                }
+                @include media(mobile){
+                    font-size: 18px; 
+                }
             }
             h3{
                 font-size: 45px;

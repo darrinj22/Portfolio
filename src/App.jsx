@@ -17,19 +17,20 @@ function App() {
   const isVisible = useOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 0.4
+    threshold: 0.9
   }, targetRef)
 
   useEffect ( () => {
-    console.log("changed");
-  },[menuOpen])
+    console.log(isVisible);
+  },[isVisible])
 
   return (
     <div className="app">
-      <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} changingbg={!isVisible ? 'transparent' : '#264653'}/>
+      <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} changingbg={isVisible ? 'transparent' : '#264653'}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 
       <div className="sections">
+      <br ref={targetRef}/>
         <Intro></Intro>
         <About></About>
         <Skills />

@@ -11,7 +11,8 @@ export default function VerticalTimelineTest() {
     let schoolIconStyles = { background: "#e9c46a", margin: "15px 0px 0px -30px"};
   return (
     <div className="vte" >
-    <VerticalTimeline >
+    <VerticalTimeline className={"vert-response"}>
+      
       {timelineElements.map((element) => {
         let isWorkIcon = element.icon === "work";
         // let showButton =
@@ -20,18 +21,19 @@ export default function VerticalTimelineTest() {
         //   element.buttonText !== "";
 
         return (
+          
           <VerticalTimelineElement
             key={element.id}
             date={element.date}
             dateClassName="date"
             iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
             icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-          >
+          > 
             <h3 className="vertical-timeline-element-title">
               {element.title}
             </h3>
             <h5 className="vertical-timeline-element-subtitle">
-              {element.location}
+              {element.location} | {element.date}
             </h5>
             <p id="description">{element.description}</p>
             {/* {showButton && (

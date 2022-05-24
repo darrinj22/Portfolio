@@ -11,12 +11,25 @@
     flex-direction: column;
 
     .title{
-        margin-top: 30px;      
-        h2{
+        margin-top: 30px; 
+        
+        p{
+            font-size: 21px;
+            color: white;
 
-            font-size: 45px;
+            span{
+                color: $accent1;
+            }
+        }
+
+        h1{
+
+            font-size: 50px;
             overflow: hidden;
-            color: $accent1;
+            color: white;
+            @include media(halfScreen){
+                padding-top: 100px;
+            }
         }
     }
 
@@ -27,7 +40,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        //justify-content: center;
+        margin: 0;
         
 
         form{
@@ -36,14 +50,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 50px;
+
+            @include media(halfScreen){
+                margin-top: 0px;
+            }
             //justify-content: space-around;
 
             input{
                 width: 500px;
                 height: 40px;
                 font-size: 17px;
-                margin-top: 20px;
+                margin-top: 5px;
             }
             
             textarea{
@@ -83,7 +101,18 @@
             display: flex;
             background-color: transparent;
             justify-content: center;
+            margin-top: 25px;
             
+            .icon{
+                margin-left: 20px;
+                border-radius: 50%;
+                background-color: transparent;
+                //background-color: white;
+
+                &:hover{
+                    background-color: $accent1;
+                }
+            }
             
     
             ul{
