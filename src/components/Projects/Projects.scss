@@ -48,8 +48,8 @@
             background-repeat: no-repeat;
             background-size: cover;
             
-            width: 350px;
-            height: 150px;
+            width: 750px;
+            height: 50px;
             border-radius: 20px;
             //border: 1px solid rgb(240, 239, 239); 
             margin: 0px 2px; 
@@ -61,15 +61,34 @@
             position: relative;
             transition: all .5s ease;
             overflow: hidden;
+            margin-top: 0px;
+            padding-top: 0px;
             //cursor: pointer;  
+
+            @include media(adjustWidth){
+                width: 600px;
+                height:50px;
+                margin-top: 20px;
+            }
+            @include media(threeQuarterScreen){
+                width: 550px !important; 
+                height:50px;
+            }
             @include media(halfScreen){
+                width: 400px !important;
+                height:50px;
+            }
+            @include media(quarterScreen){
                 display: none;
-                width: 100px;
-                height:100px;
+                width: 700px !important;
+                height:50px;
             }
             @include media(adjustWidth){
-                width: 275px;
-                height: 150px;
+                width: 600px;
+                height:50px;
+            }
+            @include media(mobile){
+                display: none !important;
             }
             h3{
                 position: absolute;
@@ -77,8 +96,24 @@
                 overflow: hidden;
                 display: flex;
                text-align: center;
-                font-size: 25px;
-                color: white;
+                font-size: 28px;
+                color: $accent1;
+                @include media(adjustWidth){
+                    font-size: 20px;
+                }
+                @include media(threeQuarterScreen){
+                    font-size: 25px;
+                }
+                @include media(halfScreen){
+                    font-size: 20px;
+                }
+                @include media(quarterScreen){
+                    font-size: 20px;
+                }
+                @include media(adjustWidth){
+                    font-size: 25px;
+                }
+
             }
 
             img{
@@ -91,9 +126,12 @@
             }
 
             p{  
-                font-size: 20px;
+                font-size: 18px;
                 position: absolute;
                 top: 0px;
+                @include media(quarterScreen){
+                    display: none;
+                }
             }
 
 
@@ -120,9 +158,13 @@
         justify-content: center;
         flex-direction: row;
         //flex-wrap: wrap; 
-        padding-top: 60px;
+        padding-top: 20px;
 
         @include media(halfScreen){
+            //flex-direction: column;
+            padding-top: 15px;
+        }
+        @include media(quarterScreen){
             flex-direction: column;
             padding-top: 15px;
         }
@@ -133,31 +175,34 @@
             background-repeat: no-repeat;
             background-size: cover;
             
-            width: 350px;
-            height: 750px;
+            width: 750px;
+            height: 350px;
             border-radius: 20px;
             border: 1px solid rgb(240, 239, 239); 
             margin: 0px 2px; 
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: $accent1;
             position: relative;
             transition: all .5s ease;
             overflow: hidden;
             cursor: pointer;  
-            
-            @include media(halfScreen){
-                width: 1000px !important;
+            @include media(threeQuarterScreen){
+                width: 550px !important; 
                 height: 300px;
+            }
+            @include media(halfScreen){
+                width: 400px !important;
+                height: 400px;
             }
             @include media(quarterScreen){
                 width: 700px !important;
                 height: 300px;
             }
             @include media(adjustWidth){
-                width: 275px;
-                height: 750px;
+                width: 600px;
+                height: 300px;
             }
 
 
@@ -193,6 +238,7 @@
                 background-color: $secondaryColor !important;
                 transition: all .5s ease-in-out; 
                 mask-image: linear-gradient(rgba(255,255,255,1),transparent);
+
 
                 .overlay{
                     background-color: white;

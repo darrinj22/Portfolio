@@ -14,8 +14,9 @@ $breakpoints: (
     inBetween: 2050px,
     adjustWidth: 2300px,
     quarterScreen : 900px,
-    mobile : 450px,
-    navFirst : 1000px
+    mobile : 650px,
+    navFirst : 1000px,
+    threeQuarterScreen: 1800px
 );
 
 @mixin media($keys...){

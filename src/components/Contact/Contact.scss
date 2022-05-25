@@ -16,7 +16,7 @@
         p{
             font-size: 21px;
             color: white;
-
+            margin-left: 5px;
             span{
                 color: $accent1;
             }
@@ -62,13 +62,20 @@
                 height: 40px;
                 font-size: 17px;
                 margin-top: 5px;
+                margin-bottom: 15px;
             }
             
             textarea{
                 width: 700px;
                 height: 300px;
                 font-size: 17px;
-                margin-top: 20px;
+                margin-top: 5px;
+            }
+
+            h2{
+                color: $accent1;
+                font-size: 30px;
+                overflow: hidden;
             }
 
             .send{
