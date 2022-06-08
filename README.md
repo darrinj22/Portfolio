@@ -1,7 +1,10 @@
-[titlepage](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/title.png)
-[about](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/about.png)
-[skills](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/skills.png)
-[projects](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/projects.png)
+# Personal Portfolio with React.js
+## This project is still in development and has yet to be published.  
+## In the mean time, Click on the links below to view screenshots of the website. 
+* [titlepage](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/title.png)  
+* [about](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/about.png)  
+* [skills](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/skills.png)  
+* [projects](https://raw.githubusercontent.com/darrinj22/Portfolio/main/Screenshots/projects.png)  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
